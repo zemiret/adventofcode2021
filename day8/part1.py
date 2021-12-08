@@ -1,0 +1,1 @@
+print(len(list(filter(lambda x: len(x) in (2, 3, 4, 7), [item for sublist in map(lambda x: x[1], map(lambda y: [y[0].split(), y[1].split()], map(lambda x: x.split('|'), open('input1').readlines()))) for item in sublist]))))
